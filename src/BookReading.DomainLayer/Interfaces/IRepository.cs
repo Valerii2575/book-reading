@@ -11,6 +11,6 @@ namespace BookReading.DomainLayer.Interfaces
         Task<TEntity> GetByIdAsync(Guid id);
         Task UpdateAsync(TEntity entity);
         Task<IEnumerable<TEntity>> SearchAsync(Expression<Func<TEntity, bool>> predicate);
-        Task<Guid> SaveChangesAsync();
+        Task<Guid> SaveChanges();
     }
 }
