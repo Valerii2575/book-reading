@@ -8,7 +8,7 @@ namespace BookReading.DomainLayer.Interfaces
         Task<Book> GetById(Guid id);
         Task<Book> AddAsync(Book book);
         Task<Book> UpdateAsync(Book book);
-        Task<bool> DeleteAsync(Guid id);
+        Task<bool> DeleteAsync(Book book);
         Task<IEnumerable<Book>> GetBookByCategoryAsync(Guid categoryId);
         Task<IEnumerable<Book>> SearchAsync(string bookName);
         Task<IEnumerable<Book>> SearchBookWithCategoryAsync(string searchedValue);
