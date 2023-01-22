@@ -16,9 +16,9 @@ namespace BookReading.DomainLayer.Services
 
         public async Task<Category> AddAsync(Category category)
         {
-            if(_categoryRepository.SearchAsync(c => c.Name == category.Name).Result.Any()) {
-                return null;
-            }
+            //if(_categoryRepository.SearchAsync(c => c.Name == category.Name).Result.Any()) {
+            //    return null;
+            //}
 
             await _categoryRepository.AddAsync(category);
 

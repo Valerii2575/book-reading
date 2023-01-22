@@ -38,9 +38,9 @@ namespace BookReading.DomainLayer.Services
             return await _bookRepository.GetAllAsync();
         }
 
-        public Task<IEnumerable<Book>> GetBookByCategoryAsync(Guid categoryId)
+        public async Task<IEnumerable<Book>> GetBookByCategoryAsync(Guid categoryId)
         {
-            throw new NotImplementedException();
+            return await _bookRepository.GetBookByCategoryAsync(categoryId);
         }
 
         public async Task<Book> GetById(Guid id)
