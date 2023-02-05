@@ -9,12 +9,12 @@ namespace BookReading.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BookController : MainController
+    public class BooksController : MainController
     {
         private readonly IBookService _bookService;
         private readonly IMapper _mapper;
 
-        public BookController(IBookService bookService, IMapper mapper)
+        public BooksController(IBookService bookService, IMapper mapper)
         {
             _bookService = bookService;
             _mapper = mapper;
