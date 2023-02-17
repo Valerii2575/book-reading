@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
-import { ToastrModule } from 'ngx-toastr';
+//import { ToastrModule } from 'ngx-toastr';
 
 import { FormsModule } from '@angular/forms';
 
@@ -12,7 +12,7 @@ import { AppComponent } from './app.component';
 
 import { BookService } from './_services/book.service';
 import { CategoryService } from './_services/category.service';
-import { ConfirmationDialogService } from './_services/confirmation-dialog.service';
+//import { ConfirmationDialogService } from './_services/confirmation-dialog.service';
 import { CategoryComponent } from './Categories/category/category.component';
 import { CategoryListComponent } from './Categories/category-list/category-list.component';
 import { BookComponent } from './Books/book/book.component';
@@ -37,14 +37,14 @@ import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    ToastrModule,
+    //ToastrModule,
     HttpClientModule,
     FormsModule
   ],
   providers: [
     BookService,
     CategoryService,
-    ConfirmationDialogService
+    //ConfirmationDialogService
   ],
   bootstrap: [AppComponent]
 })
